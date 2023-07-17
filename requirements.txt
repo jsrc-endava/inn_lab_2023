@@ -1,0 +1,6 @@
+msgraph-sdk
+langchain
+openai
+python-dotenv
+pymilvus
+tiktoken
