@@ -7,9 +7,10 @@ load_dotenv('.env')
 openai.api_key = os.environ['OPENAI_API_KEY']
 
 prompt = """
+Based on the context
+
 {context}
 
-Based on the context
 Who is Nicola Tesla?"""
 
 # create a completion
