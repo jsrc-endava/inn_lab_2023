@@ -7,6 +7,7 @@ from msgraph import GraphServiceClient
 
 load_dotenv('.env')
 
+
 # The client credentials flow requires that you request the
 # /.default scope, and pre-configure your permissions on the
 # app registration in Azure. An administrator must grant consent

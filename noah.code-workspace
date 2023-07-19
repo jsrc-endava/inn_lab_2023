@@ -1,0 +1,13 @@
+{
+  "folders": [
+    {
+      "path": "azure"
+    },
+    {
+      "path": "slack"
+    },
+    {
+      "path": "workshop"
+    },
+  ],
+}

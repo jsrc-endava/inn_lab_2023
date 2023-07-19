@@ -1,4 +1,3 @@
-msgraph-sdk
 langchain
 openai
 python-dotenv
