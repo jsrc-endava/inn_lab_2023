@@ -1,4 +1,6 @@
 flask
+Flask-SQLAlchemy
+invoke
 langchain
 openai
 python-dotenv

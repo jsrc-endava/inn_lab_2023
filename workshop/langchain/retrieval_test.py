@@ -17,7 +17,7 @@ texts = text_splitter.split_documents(documents)
 docsearch = Milvus.from_documents(
   texts,
   embedding=OpenAIEmbeddings(),
-  collection_name="innovation_lab_docsearch",
+  collection_name="messagges",
   connection_args={
     "uri": os.environ['ZILLIZ_ENDPOINT'],
     "token": os.environ['ZILLIZ_TOKEN'],
