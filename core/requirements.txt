@@ -1,3 +1,4 @@
+authlib
 flask
 Flask-SQLAlchemy
 invoke

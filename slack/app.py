@@ -6,11 +6,7 @@ from slack_bolt.adapter.fastapi import SlackRequestHandler
 
 load_dotenv('.env')
 
-# Initializes your app with your bot token and signing secret
-app = App(
-  token=os.environ.get("SLACK_BOT_TOKEN"),
-  signing_secret=os.environ.get("SLACK_SIGNING_SECRET")
-)
+app = App()
 app_handler = SlackRequestHandler(app)
 
 
@@ -21,9 +17,20 @@ def handle_message(message, say, logger):
   print("Handling message")
   print(message)
 
-api = FastAPI()
 
+api = FastAPI()
 
 @api.post("/slack/events")
 async def endpoint(req: Request):
-    return await app_handler.handle(req)
+  return await app_handler.handle(req)
+
+
+@api.get("/slack/install")
+async def install(req: Request):
+  print(await req.body())
+  return await app_handler.handle(req)
+
+
+@api.get("/slack/oauth_redirect")
+async def oauth_redirect(req: Request):
+  return await app_handler.handle(req)
