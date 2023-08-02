@@ -1,9 +1,10 @@
-authlib
 flask
+Flask-Alembic
 Flask-SQLAlchemy
 invoke
 langchain
 openai
+psycopg2
 python-dotenv
 pymilvus
 tiktoken
