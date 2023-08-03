@@ -23,6 +23,7 @@ def upgrade() -> None:
     sa.Column('message_id', sa.String(50), nullable=False),
     sa.Column('channel_id', sa.String(50)),
     sa.Column('user_id', sa.String(50)),
+    sa.Column('team_id', sa.String(50)),
     sa.Column('username', sa.String(50)),
     sa.Column('text', sa.Unicode(500), nullable=False),
   )
