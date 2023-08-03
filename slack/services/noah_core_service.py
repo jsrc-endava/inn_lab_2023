@@ -17,5 +17,3 @@ class NoahCoreService:
 
     response = requests.post(f"{self.api_url}/slack/save_message", json=payload)
     print(response)
-
-
