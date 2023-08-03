@@ -7,6 +7,3 @@ class TestMessageHelpers:
     model = SlackMessage()
 
     session.add(model)
-
-    print(model)
-    print(helper.save_message("test"))
