@@ -1,8 +1,8 @@
-import os
 from dotenv import load_dotenv
 from fastapi import FastAPI, Request
 from slack_bolt import App
 from slack_bolt.adapter.fastapi import SlackRequestHandler
+from services.noah_core_service import NoahCoreService
 
 load_dotenv('.env')
 
@@ -12,11 +12,8 @@ app_handler = SlackRequestHandler(app)
 
 @app.event("message")
 def handle_message(message, say, logger):
-  logger.info("Handling message")
-  logger.info(message)
-  print("Handling message")
-  print(message)
-
+  noah_service = NoahCoreService()
+  noah_service.save_message(message)
 
 api = FastAPI()
 

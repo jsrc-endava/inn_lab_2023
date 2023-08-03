@@ -1,10 +1,12 @@
 flask
 Flask-Alembic
+Flask-Migrate
 Flask-SQLAlchemy
 invoke
 langchain
 openai
 psycopg2
+pytest
 python-dotenv
 pymilvus
 tiktoken
