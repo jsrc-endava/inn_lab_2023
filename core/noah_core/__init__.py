@@ -1,6 +1,6 @@
 import os
 from flask import Flask
-from .extensions import db, migrate
+from noah_core.extensions import db, migrate
 from noah_core.blueprints.interactions import interactions_blueprint
 from noah_core.blueprints.slack import slack_blueprint
 
