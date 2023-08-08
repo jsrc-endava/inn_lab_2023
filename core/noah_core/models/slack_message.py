@@ -22,3 +22,4 @@ class SlackMessage(db.Model):
   team_id = db.Column(db.String(50))
   username = db.Column(db.String(50))
   text = db.Column(db.Unicode(500), nullable=False)
+  vector_id = db.Column(db.String(50))

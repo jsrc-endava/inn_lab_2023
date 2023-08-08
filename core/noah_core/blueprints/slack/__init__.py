@@ -8,7 +8,7 @@ def slack_blueprint():
   def save_slack_message():
     data = request.get_json()
     print(data)
-    message = messages_helper.save_message(
+    message = messages_helper.process_message(
       message_id=data.get('message_id'),
       channel_id=data.get('channel_id'),
       user_id=data.get('user_id'),
